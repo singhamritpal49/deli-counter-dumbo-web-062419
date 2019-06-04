@@ -6,15 +6,15 @@ puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
 
-def line(katz_deli) 
-if array.length >= 1
-  line = []
+def line(katz_deli) # this was the one I figured out
+if katz_deli.length >= 1
+  katz_deli = []
   counter = 1
-  array.each do |name|
-    line.push("#{counter}. #{name}")
+  katz_deli.each do |name|
+    katz_deli.push("#{counter}. #{name}")
     counter += 1
   end
-  puts "The line is currently: #{line.join(" ")}"
+  puts "The line is currently: #{katz_deli.join(" ")}"
 else
   puts "The line is currently empty."
 end
