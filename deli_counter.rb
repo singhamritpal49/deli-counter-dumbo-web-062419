@@ -14,7 +14,7 @@ if katz_deli.length >= 1
     katz_deli.push("#{counter}. #{name}")
     counter += 1
   end
-  puts "The line is currently: #{katz_deli.join(" ")}"
+  puts "The line is currently: #{line.join(" ")}"
 else
   puts "The line is currently empty."
 end
