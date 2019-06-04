@@ -6,7 +6,7 @@ puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
 
-def line(array) # this was the one I figured out
+def line(katz_deli) 
 if array.length >= 1
   line = []
   counter = 1
