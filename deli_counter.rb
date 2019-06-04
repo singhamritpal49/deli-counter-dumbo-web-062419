@@ -5,6 +5,7 @@ katz_deli.push(name)
 puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
+
   def line(katz_deli)
     phrase = "The line is currently: "
     if katz_deli.length > 0
@@ -16,3 +17,12 @@ end
       puts "The line is currently empty."
     end
   end
+
+def now_serving(katz_deli)
+
+  katz_deli.each_with_index do |name, index|
+     puts   " Currently serving #{index +1}. #{name} "
+     katz_deli.shift()
+
+end
+end
