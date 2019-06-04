@@ -23,6 +23,5 @@ def now_serving(katz_deli)
   katz_deli.each_with_index do |name, index|
      puts   "Currently serving #{name}."
      katz_deli.shift()
-
 end
 end
