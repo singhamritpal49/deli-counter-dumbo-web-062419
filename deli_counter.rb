@@ -6,15 +6,15 @@ puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
 
- def line(katz_deli)
-   if katz_deli.length == 0
+  def line(katz_deli)
+    if katz_deli.length == 0
       puts "The line is currently empty."
     else
       line = []
-      katz_deli.each_with_index do { |name,index| puts "hello" }
+      katz_deli.each_with_index do { |name,index| line.push }
 end
   end
-end
+
 def now_serving(katz_deli)
   if katz_deli.length == 0
     puts "There is nobody waiting to be served!"
