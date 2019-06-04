@@ -6,9 +6,9 @@ puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
 
-def line(katz_deli) # this was the one I figured out
+def line(katz_deli)
 if katz_deli.length >= 1
-  katz_deli = []
+  line = []
   counter = 1
   katz_deli.each do |name|
     katz_deli.push("#{counter}. #{name}")
