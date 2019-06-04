@@ -6,12 +6,26 @@ puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
 
-  def line(katz_deli)
-    if katz_deli.length == 0
-      puts "The line is currently empty."
+  #def line(katz_deli)
+  #  if katz_deli.length == 0
+  #    puts "The line is currently empty."
+  #  else
+  #    line = []
+  #    katz_deli.each_with_index do { |name,index| line.push("#{index +1 }.", name) }
+#end
+#  end
 
-end
+def line(katz_deli)
+  phrase = "The line is currently: "
+  if katz_deli.length > 0
+    katz_deli.each_with_index do |name, index|
+      phrase += "#{index + 1}. #{name} "
+    end
+    puts phrase
+  else
+    puts "The line is currently empty."
   end
+end
 
 def now_serving(katz_deli)
   if katz_deli.length == 0
